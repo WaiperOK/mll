@@ -13,15 +13,15 @@ import seaborn as sns
 import logging
 import joblib
 
-# Настройка логирования
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Чтение конфигурации из файла
+
 with open('config.yaml', 'r') as file:
     config = yaml.safe_load(file)
 
-# Определение простой нейронной сети
+
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
