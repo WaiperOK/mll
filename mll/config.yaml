@@ -1,0 +1,17 @@
+model:
+  input_size: 4
+  hidden_size: 10
+  output_size: 3
+
+training:
+  epochs: 1000
+  learning_rate: 0.01
+  batch_size: 32
+
+attack:
+  epsilon: 0.1
+  num_poisoned_samples: 10
+
+data:
+  test_size: 0.3
+  random_state: 42
